@@ -1,4 +1,11 @@
-.crystal-image{
+#gem1{
+	height:85px;
+}
+
+#gem2{
 	width:100px;
-	width:100px;
+}
+ 
+#gem3, #gem4{
+	width:75px;
 }
