@@ -1,7 +1,5 @@
-
+// initialize the game
 var targetNum;
-
-
 var counter = 0;
 var wins = 0;
 var losses = 0;
@@ -10,15 +8,14 @@ var gameOver = false;
 var imageArray = ["assets/images/yellow-gem.png", "assets/images/green-gem.png",
 "assets/images/heart-gem.png", "assets/images/blue-gem2.png"]
 
-
 var idArray = ["gem1", "gem2", "gem3", "gem4"];
 var gemVal = [];
+
 generateVals();
 
-
-var imageCrystal = $("<img>");
-imageCrystal.addClass("crystal-image"); 
-
+//create the crystals, give them ids (from the id array) 
+//and other attributes
+//and append them to the crystals div
 for (var i = 0; i < imageArray.length; i++){
 
 	var imageCrystal = $("<img>");
@@ -37,7 +34,6 @@ for (var i = 0; i < imageArray.length; i++){
 
 }
 
-
 // When a crystal is clicked
 $(".crystal-image").on("click", function(){
 
@@ -46,7 +42,6 @@ $(".crystal-image").on("click", function(){
 
 	counter += crystalValue;
 	$("#score").html(counter);
-	// alert("crystal value: " + crystalValue + " Your Score: " + counter)
 
 	if (counter == targetNum) {
 		wins++;
@@ -57,51 +52,29 @@ $(".crystal-image").on("click", function(){
 	else if (counter > targetNum) { 
 		losses++;
 		$("#losses").html(losses);
-		resetGame();
-		
+		resetGame();	
 	}
 })
 
-function generateVals(id){
+function generateVals(){
 
 	targetNum = Math.floor((Math.random()* 102) + 19);
 	$("#number-to-guess").text(targetNum);
 
+	//generate 4 random numbers 
+	//and put them in the gemVal array
 	for (var i = 0; i < imageArray.length; i++) {
 
 		gemVal[i] = Math.floor((Math.random()* 12) + 1);
 
 	}
-//New values for each gem, referenced by IDs
+//Give the new values to each gem, referenced by IDs
 	$("#gem1").attr("data-crystalvalue", gemVal[0]);
 	$("#gem2").attr("data-crystalvalue", gemVal[1]);
 	$("#gem3").attr("data-crystalvalue", gemVal[2]);
 	$("#gem4").attr("data-crystalvalue", gemVal[3]);
 
 }
-
-// function generateVals(){
-
-// 	targetNum = Math.floor((Math.random()* 102) + 19);
-// 	$("#number-to-guess").text(targetNum);
-
-// 	generateCrystalVal("#gem1");
-// 	generateCrystalVal("#gem2");
-// 	generateCrystalVal("#gem3");
-// 	generateCrystalVal("#gem4");
-
-	
-
-// }
-
-// function generateCrystalVal(id){
-
-	
-
-// 	$(id).attr("data-crystalvalue", Math.floor((Math.random()* 12) + 1));
-
-// }
-
 
 function resetGame() {
 	counter = 0;

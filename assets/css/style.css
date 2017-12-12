@@ -8,17 +8,22 @@ body{
 	box-sizing: border-box;
 }
 
-.pink{
-	height:200px;
+.scoreCard{
+	height:155px;
 }
 
-.numToGuessText{
-	padding-top:15px;
+.numToGuess{
+	height:235px;
+	padding-top:50px;
 }
 
 #gameTitle{
-	margin-top:20px;
+	margin-top:0px;
 	margin-bottom:0px;
+	/*font-family: 'Audiowide', cursive;*/
+ 	font-family: 'Concert One', cursive;
+
+ 	font-size: 80px;
 }
 
 #gem1{
@@ -32,11 +37,3 @@ body{
 #gem3, #gem4{
 	width:75px;
 }
-
-#gameTitle{
- 	/*font-family: 'Audiowide', cursive;*/
- 	font-family: 'Concert One', cursive;
- 	/*font-family: 'Julius Sans One', sans-serif;*/
- 	/*font-family: 'Bad Script', cursive;*/
- 	font-size: 80px;
- }
