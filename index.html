@@ -10,18 +10,105 @@
   <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  <!-- Compiled and minified CSS -->
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 
 </head>
 <body>
 
-	<h1>Number to Guess: <span id="number-to-guess"></span></h1>
-	<h2>Wins: <span id="wins">0</span></h2>
-	<h2>Losses: <span id="losses">0</span></h2>
-	<h1>Total Score: <span id="score">0</span></h1>
 
-	<div id="crystals">
+
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h1 id="gameTitle">Crystal Game</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12">
+				<div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Instructions</span>
+              <p>You will be given a random number at the start of the game.</p>
+              <p>By clicking on a crystal below, you will add a specific amount of points to your total score.</p>
+              <p>You win the game by matching your total score to the random number. You lose if your total score goes above the random number.</p>
+              <p>The value of each crystal is hidden from you intil you click on it.</p>
+              <p>Each time the game starts, the value of the crystals will change.</p>
+
+            </div>
+				
+			</div>
+		</div>
 	</div>
+		<div class="row">
+			<div class="col s6">
+				<div class="card-panel pink darken-3">
+          <span class="white-text">
+          	<h4 class="numToGuessText">Number to Guess: <br><span id="number-to-guess"></span></h4>
+          </span>
+        </div>
+				
+			</div>
+			<div class="col s6">
+				<div class="card-panel pink darken-3">
+          <span class="white-text">
+
+				<h4>Wins: <span id="wins">0</span></h4>
+				<h4>Losses: <span id="losses">0</span></h4>
+				</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s6 offset-s3">
+
+				<div class="card-panel deep-orange lighten-4">
+          <span class="white-text">
+
+
+				<div id="crystals">
+				</div>
+			</span>
+		</div>
+
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s6 offset-s3">
+
+				<div class="card-panel blue-grey darken-1">
+          <span class="white-text">
+
+				<h4>Total Score: <br><span id="score">0</span></h4>
+				</span>
+				</div>
+
+				
+				
+				
+			</div>
+		</div>
+
+
+		</div>
+
+
+	
+	
+	
+	
+
+
+
 
 	 
 

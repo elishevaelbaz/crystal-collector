@@ -1,3 +1,26 @@
+body{
+	background: url("../images/intersection/intersection.png");
+}
+
+*{
+	text-align:center;
+	line-height:1.5;
+	box-sizing: border-box;
+}
+
+.pink{
+	height:200px;
+}
+
+.numToGuessText{
+	padding-top:15px;
+}
+
+#gameTitle{
+	margin-top:20px;
+	margin-bottom:0px;
+}
+
 #gem1{
 	height:85px;
 }
@@ -9,3 +32,11 @@
 #gem3, #gem4{
 	width:75px;
 }
+
+#gameTitle{
+ 	/*font-family: 'Audiowide', cursive;*/
+ 	font-family: 'Concert One', cursive;
+ 	/*font-family: 'Julius Sans One', sans-serif;*/
+ 	/*font-family: 'Bad Script', cursive;*/
+ 	font-size: 80px;
+ }

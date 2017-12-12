@@ -7,11 +7,6 @@ var wins = 0;
 var losses = 0;
 var gameOver = false;
 
-// initialize this variable at 4 
-//so if we want to change the number of crystals
-//in the program, we just have to change this value
-// numCrystals = 4;
-
 var imageArray = ["assets/images/yellow-gem.png", "assets/images/green-gem.png",
 "assets/images/heart-gem.png", "assets/images/blue-gem2.png"]
 
@@ -19,12 +14,6 @@ var imageArray = ["assets/images/yellow-gem.png", "assets/images/green-gem.png",
 var idArray = ["gem1", "gem2", "gem3", "gem4"];
 var gemVal = [];
 generateVals();
-
-
-// var gemVal1 = Math.floor((Math.random()* 12) + 1);
-// var gemVal2 = Math.floor((Math.random()* 12) + 1);
-// var gemVal3 = Math.floor((Math.random()* 12) + 1);
-// var gemVal4 = Math.floor((Math.random()* 12) + 1);
 
 
 var imageCrystal = $("<img>");
@@ -72,11 +61,6 @@ $(".crystal-image").on("click", function(){
 		
 	}
 })
-
-// $(".btn").on("click", function(){
-// 	resetGame();
-// })
-
 
 function generateVals(id){
 
