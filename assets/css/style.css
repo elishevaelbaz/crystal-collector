@@ -20,9 +20,7 @@ body{
 #gameTitle{
 	margin-top:0px;
 	margin-bottom:0px;
-	/*font-family: 'Audiowide', cursive;*/
- 	font-family: 'Concert One', cursive;
-
+	font-family: 'Audiowide', cursive;
  	font-size: 80px;
 }
 
